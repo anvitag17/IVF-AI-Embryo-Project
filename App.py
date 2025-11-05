@@ -15,7 +15,7 @@ from tensorflow import keras
 import logging
 
 app = Flask(__name__, template_folder='templates')
-# loaded_model = joblib.load('/home/ashritagandhari/embryopredict/Embryo_Prediction_Model.pkl')
+# loaded_model = joblib.load('/home/anvitagandhari/embryopredict/Embryo_Prediction_Model.pkl')
 my_dir = os.path.dirname(__file__)
 upload_folder = os.path.join(my_dir, 'static/upload_folder')
 model_file_path = os.path.join(my_dir, 'Embryo_Prediction_Model.h5')
@@ -83,3 +83,4 @@ def return_img_stream(img_local_path):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
